@@ -1,4 +1,4 @@
-import { add } from "./example/example";
+import { add } from './example/example';
 
 const a = 5;
 const b = 3;
