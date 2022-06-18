@@ -5,8 +5,11 @@
   "main": "./dist/src/index.js",
   "scripts": {
     "start": "node ./dist/index.js",
-    "build": "tsc",
-    "test": "jest"
+    "start:dev": "ts-node ./src/index.ts",
+    "build": "bash ./scripts/build.sh",
+    "compile": "tsc --project tsconfig.build.json",
+    "test": "jest",
+    "lint": "npx prettier --write ./src"
   },
   "repository": {
     "type": "git",
@@ -24,20 +27,9 @@
   },
   "homepage": "https://github.com/Polly-Eco/Polly-Pattern#readme",
   "devDependencies": {
-    "@types/jest": "^28.1.2",
     "@types/node": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.28.0",
-    "@typescript-eslint/parser": "^5.28.0",
-    "dotenv": "^16.0.1",
-    "eslint": "^8.18.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^28.1.1",
-    "prettier": "^2.7.1",
-    "ts-jest": "^28.0.5",
     "ts-node": "^10.8.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.4",
-    "undici": "^5.5.1"
+    "typescript": "^4.7.4"
   }
 }
