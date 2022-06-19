@@ -9,7 +9,7 @@
         "allowJs": true,
         "allowSyntheticDefaultImports": true,
         "moduleResolution": "node",
-        "module": "commonjs",
+        "module": "es2022",
         "skipLibCheck": true,
         "lib": ["es2020", "dom"],
         "typeRoots": ["./src/types", "./node_modules/@types"],
